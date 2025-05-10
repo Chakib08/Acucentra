@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ACUCENTRA</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f5f5f5; color: #333; }
+    header { background-color: #2e7d32; color: white; padding: 1rem; text-align: center;  }
+    nav { background-color: #388e3c; padding: 0.5rem; text-align: center; }
+    nav a { color: white; margin: 0 1rem; text-decoration: none; font-weight: bold; }
+    .hero { background: #c8e6c9; padding: 2rem; text-align: center; }
+    .hero h1 { margin: 0 0 1rem; }
+    .services { display: flex; flex-wrap: wrap; justify-content: space-around; padding: 2rem; background: #fff; }
+    .service { background: #e8f5e9; padding: 1rem; margin: 1rem; border-radius: 8px; flex: 1 1 300px; max-width: 300px; box-shadow: 0 0 10px rgba(0,0,0,0.1); cursor: pointer; }
+    .contact, .booking, .shop { background: #a5d6a7; padding: 2rem; text-align: center; }
+    form input, form textarea, form button, form select { margin: 0.5rem 0; padding: 0.5rem; width: 100%; max-width: 400px; }
+    .products { display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; }
+    .product { background: #e8f5e9; padding: 1rem; border-radius: 8px; max-width: 200px; box-shadow: 0 0 8px rgba(0,0,0,0.1); }
+    footer { background: #2e7d32; color: white; text-align: center; padding: 1rem; }
+    .ACUCENTRAimage{ width: 200px;}
+    .navigation a:hover{
+        text-decoration: none;
+        color:rgb(130, 205, 84);
+    }
+  </style>
+  <script>
+    function openService(service) {
+      window.open(service + ".html", "_blank");
+    }
+    function openShop() {
+      window.open("boutique.html", "_blank");
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <img src="acu1.png" alt="ACUCENTRAimage" class="ACUCENTRAimage">
+    <p>Votre bien-être, notre priorité</p>
+  </header>
+  <nav class="navigation">
+    <a href="#Accueil">Acceuil</a>
+    <a href="#services">Services</a>
+    <a href="#booking">Rendez-vous</a>
+    <a href="#shop">Boutique</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <section class="hero">
+    <h1>Bienvenue chez ACUCENTRA</h1>
+    <p>Découvrez des thérapies naturelles pour votre corps et votre esprit.</p>
+  </section>
+  <section id="services" class="services">
+    <div class="service" onclick="openService('acupuncture')">
+      <h2>Acupuncture</h2>
+      <p>Thérapie traditionnelle chinoise pour restaurer l'équilibre et soulager la douleur.</p>
+    </div>
+    <div class="service" onclick="openService('apipuncture')">
+      <h2>Apipuncture</h2>
+      <p>Thérapie utilisant le venin d'abeille pour stimuler les réponses de guérison.</p>
+    </div>
+    <div class="service" onclick="openService('massage-therapeutique')">
+      <h2>Massage Thérapeutique</h2>
+      <p>Massage ciblé pour soulager les tensions musculaires et les douleurs chroniques.</p>
+    </div>
+    <div class="service" onclick="openService('massage-relaxant')">
+      <h2>Massage Relaxant</h2>
+      <p>Massage doux pour vous détendre et éliminer le stress.</p>
+    </div>
+    <div class="service" onclick="openService('therapie-des-ventouses')">
+        <h2>Therapie des Ventouses</h2>
+        <p>Pour améliorer la circulation sanguine, stimuler les points énergétiques et éliminer les substances toxiques accumulées dans le corps.</p>
+      </div>
+    <div class="service" onclick="openService('dietetique')">
+      <h2>Diététique</h2>
+      <p>Conseils nutritionnels personnalisés pour une vie équilibrée.</p>
+    </div>
+  </section>
+  <section id="booking" class="booking">
+    <h2>Prendre un Rendez-vous</h2>
+    <form action="https://formspree.io/f/your_form_id" method="POST">
+      <input type="text" name="Nom complet" placeholder="Nom complet" required />
+      <input type="email" name="Adresse email" placeholder="Adresse email" required />
+      <input type="tel" name="Numéro de téléphone" placeholder="Numéro de téléphone" required />
+      <select name="Service" required>
+        <option value="">Choisissez un service</option>
+        <option>Acupuncture</option>
+        <option>Apipuncture</option>
+        <option>Massage Thérapeutique</option>
+        <option>Massage Relaxant</option>
+        <option>therapie des ventouses</option>
+        <option>Diététique</option>
+
+      </select>
+      <textarea name="Message ou demande spéciale" placeholder="Message ou demande spéciale"></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
+  </section>
+  <section id="shop" class="shop">
+    <h2>Boutique</h2>
+    <button onclick="openShop()">Voir la boutique complète</button>
+  </section>
+  <section id="contact" class="contact">
+    <h2>Contactez-nous</h2>
+    <p>Email : <a href="mailto:acucentrastore">acucentrastore</a></p>
+    <p>Téléphone : 0540734491</p>
+    <p>Adresse : Benchaabane, Boufarik, BLIDA / Hussein Dey, ALGER</p>
+    <p><strong>Horaires :</strong><br>
+      Benchaabane : MARDI & MERCREDI de 9h à 15h<br>
+      Hussein Dey : JEUDI, SAMEDI & DIMANCHE de 9h à 14h
+    </p>
+  </section>
+  <footer>
+    <p>&copy; 2025 ACUCENTRA. Tous droits réservés.</p>
+  </footer>
+</body>
+</html>

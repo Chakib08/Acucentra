@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boutique Produits Naturels | ACUCENTRA</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 2rem;
+      margin: 0;
+      background-image: url('https://cdn.pixabay.com/photo/2017/06/30/18/33/herbs-2458376_1280.jpg');
+      background-size: cover;
+      background-position: center;
+      color: white;
+    }
+    header {
+      text-align: center;
+      background: rgba(46, 125, 50, 0.9);
+      color: white;
+      padding: 1rem;
+      border-radius: 10px;
+    }
+    h1, h2 {
+      margin-bottom: 0.5rem;
+    }
+    .catalogue-section {
+      margin-top: 2rem;
+    }
+    .section-title {
+      text-align: center;
+      font-size: 1.5rem;
+      background-color: rgba(46, 125, 50, 0.8);
+      padding: 0.5rem;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+    .catalogue {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+    }
+    .product {
+      background-size: cover;
+      background-position: center;
+      padding: 2rem;
+      border-radius: 10px;
+      color: white;
+      width: 280px;
+      height: 350px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 100, 0, 0.5);
+      border-radius: 10px;
+      z-index: 0;
+    }
+    .content {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+    }
+    .product h3 {
+      margin: 0 0 0.5rem;
+      text-shadow: 1px 1px 2px black;
+    }
+    .product p {
+      font-size: 0.9rem;
+      margin-bottom: 0.5rem;
+    }
+    .product button {
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 5px;
+      background-color: rgba(255, 255, 255, 0.9);
+      color: #2e7d32;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .product button:hover {
+      background-color: white;
+    }
+    footer {
+      margin-top: 4rem;
+      text-align: center;
+      background-color: rgba(46, 125, 50, 0.9);
+      padding: 1rem;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ACUCENTRA</h1>
+    <h2>Boutique - Produits Naturels</h2>
+  </header>
+
+  <div class="catalogue-section">
+    <div class="section-title">Miels Thérapeutiques</div>
+    <section class="catalogue">
+      <div class="product" style="background-image: url('https://cdn.pixabay.com/photo/2016/11/18/17/20/honey-1835620_1280.jpg');">
+        <div class="overlay"></div>
+        <div class="content">
+          <h3>Fertimiel Homme</h3>
+          <p>Préparation naturelle pour améliorer la fertilité masculine et renforcer la vitalité reproductive.</p>
+          <button>Commander</button>
+        </div>
+      </div>
+      <div class="product" style="background-image: url('https://cdn.pixabay.com/photo/2015/07/17/13/44/honey-849587_1280.jpg');">
+        <div class="overlay"></div>
+        <div class="content">
+          <h3>Fertimiel Femme</h3>
+          <p>Soutient la fertilité féminine et favorise l'équilibre hormonal naturel.</p>
+          <button>Commander</button>
+        </div>
+      </div>
+      <div class="product" style="background-image: url('https://cdn.pixabay.com/photo/2017/09/26/13/20/honey-2786725_1280.jpg');">
+        <div class="overlay"></div>
+        <div class="content">
+          <h3>Appétophyte</h3>
+          <p>Stimulant naturel de l'appétit, idéal pour favoriser une prise de poids saine.</p>
+          <button>Commander</button>
+        </div>
+      </div>
+      <div class="product" style="background-image: url('https://cdn.pixabay.com/photo/2017/06/20/19/22/tea-2424585_1280.jpg');">
+        <div class="overlay"></div>
+        <div class="content">
+          <h3>ImmunoBoost</h3>
+          <p>Renforce le système immunitaire, combat les allergies et prévient les infections saisonnières.</p>
+          <button>Commander</button>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="catalogue-section">
+    <div class="section-title">Crèmes Naturelles</div>
+    <section class="catalogue">
+      <div class="product" style="background-image: url('https://cdn.pixabay.com/photo/2016/11/29/02/03/aromatherapy-1868285_1280.jpg');">
+        <div class="overlay"></div>
+        <div class="content">
+          <h3>SecretBreast</h3>
+          <p>Crème raffermissante et volumisante pour les zones féminines, à base de plantes naturelles.</p>
+          <button>Commander</button>
+        </div>
+      </div>
+      <div class="product" style="background-image: url('https://cdn.pixabay.com/photo/2016/11/18/15/20/wellness-1835600_1280.jpg');">
+        <div class="overlay"></div>
+        <div class="content">
+          <h3>LésioCalm</h3>
+          <p>Traitement apaisant pour les lésions cutanées, les escarres et les peaux sensibles.</p>
+          <button>Commander</button>
+        </div>
+      </div>
+      <div class="product" style="background-image: url('https://cdn.pixabay.com/photo/2017/02/01/14/51/aroma-2031773_1280.jpg');">
+        <div class="overlay"></div>
+        <div class="content">
+          <h3>Eczerex</h3>
+          <p>Crème apaisante pour soulager l'eczéma, les rougeurs et les démangeaisons.</p>
+          <button>Commander</button>
+        </div>
+      </div>
+      <div class="product" style="background-image: url('https://cdn.pixabay.com/photo/2020/04/15/06/18/spa-5044032_1280.jpg');">
+        <div class="overlay"></div>
+        <div class="content">
+          <h3>AnaCalm</h3>
+          <p>Soulagement efficace et naturel des douleurs et irritations liées aux hémorroïdes.</p>
+          <button>Commander</button>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="catalogue-section">
+    <div class="section-title">Tisanes Médicinales</div>
+    <section class="catalogue">
+      <div class="product" style="background-image: url('https://cdn.pixabay.com/photo/2016/11/19/11/17/tea-1836974_1280.jpg');">
+        <div class="overlay"></div>
+        <div class="content">
+          <h3>Mincephyte</h3>
+          <p>Tisane détoxifiante pour nettoyer le côlon, réduire les ballonnements et aider à mincir.</p>
+          <button>Commander</button>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <p><strong>Contact :</strong> 0540734491 | acucentrastore@gmail.com</p>
+    <p><strong>Adresse :</strong> Benchaabane, Boufarik, BLIDA (Mardi & Mercredi, 9h-15h) / Hussein Dey, ALGER (Jeudi, Samedi & Dimanche, 9h-14h)</p>
+  </footer>
+</body>
+</html>
